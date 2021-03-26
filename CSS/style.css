@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #cd326e;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+header a{
+    color: white;
+    font-size: 25px;
+}
+header ul{
+    list-style:none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    margin: 0 auto;
+ 
+}
+#logo a{
+    font-size: 35px;
+}
+#menu li{
+    padding: 10px;
+}
+.service-title h3{
+    padding: 8px 0px;
+}
+#social-links li{
+    padding: 10px;
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-box{
+    border: 1px solid #eee;
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+} 
+.btn{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.btn a{
+    background-color: lightpink;
+    color: purple;
+    padding:10px 12px;
+    border: 2px solid transparent;
+}
+.btn a:hover{
+    background-color: purple;
+    color: lightpink;
+    padding:10px 12px;
+    border: 2px solid lightpink;
+}
+article{
+    padding: 10px;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside ul li a{
+    display: block;
+     color: #cd326e;
+     padding: 10px;
+     border-bottom: 1px solid grey;
+}
+.service-box img{
+    width: 100%;
+}
+.service-desc{
+    padding: 10px 0px;
+
+}
+#main{
+    display: flex;
+    
+}
+aside{
+    padding: 10px;
+    flex: 0  0 20vw;
+    background-color: beige;
+}
+aside img{
+    width: 100%;
+    margin-top: 5px;
+}
+footer{
+    background-color: #cd326e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+}
+
+
+@media screen and (max-width:850px){
+    
+    aside{
+        flex: 0  0 30vw;
+    }
+    .service-box{
+        flex-basis: 48%;    
+        display: flex;
+        flex-direction: column;
+    } 
+}
+@media screen and (max-width:600px){
+    
+    header{
+        flex-direction: column;
+        
+    }
+    #logo{
+        order: -1;
+    }
+    article{
+        order: -1;
+    }
+    #main{
+        flex-direction: column;
+    }
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+     h2{
+        text-align: center;
+    }
+}
